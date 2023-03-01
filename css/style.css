@@ -161,9 +161,8 @@ header{
         flex-direction: column;
         text-align: center;
     }
-    .main-landing h2 {
-        position: absolute;
-        top: 365px;
+    .main-landing {
+        margin-top: 50px;
 }
 .main-landing p{
     width:320px;

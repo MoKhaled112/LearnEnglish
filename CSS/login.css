@@ -1,0 +1,126 @@
+body {
+
+    background-image: url("../images/background0.jpg");
+    background-size: cover;
+}
+
+.main {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: stretch;
+    height: 18em;
+    width: 26%;
+    margin: 15% auto;
+    box-shadow: 0px 2px 8px 2px rgba(81, 80, 80, 0.566);
+}
+
+form {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    height: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input-box {
+    width: 60%;
+    height: 15%;
+    border: 3px solid rgba(242, 238, 238, 0);
+    outline: none;
+    border-radius: 8px;
+    background-color: rgba(242, 238, 238, 0.5);
+    text-align: center;
+}
+
+
+.input-box:hover {
+
+    border-bottom: 3px solid #e1441a;
+}
+
+.input-box:focus {
+
+    border-bottom: 3px solid #e1441a;
+    background-color: white;
+}
+
+input[type="submit"] {
+    width: 30%;
+    height: 16%;
+    background-color: #e1441a;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #eb3908;
+
+    box-shadow: 0px 1px 5px 2px #e1451aa1;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+a:active {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+.footerMain {
+    background-color: rgb(231, 231, 231);
+    background-color: rgba(231, 231, 231, 0.5);
+    height: 15%;
+}
+
+.heading {
+    display: flex;
+    background-color: rgb(254, 254, 254);
+    background-color: rgba(254, 254, 254, 0.5);
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+}
+
+.heading span {
+    text-transform: uppercase;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+.footerMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    cursor: pointer;
+}
+
+
+input[type="checkbox"]:checked {
+    accent-color: #e1441a;
+    box-shadow: 0px 1px 5px 1px #e1451ae3;
+}
+
+@media only screen and (max-width: 600px){
+    .main {
+        min-width: 50%;
+    }
+    input[type="submit"] {
+        width: fit-content;
+    }
+}

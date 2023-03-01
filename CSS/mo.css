@@ -1,0 +1,214 @@
+/* --- General Rules --- */
+
+:root {
+	--orange: #df8319; /* --- For code --- */ 
+	--gold: #ffaa00; /* --- For highlighting --- */ 
+    --MBlack: #121214; /* --- Main Black --- */
+    --white: #ffffff;
+    --secondary: #d84936;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+bold {
+    font-weight: 700;
+}
+body {
+    margin: 0 !important;
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    background-color: var(--white);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 99%;
+    padding: 0px 0.5vw;
+    display: inline-flex;
+}
+.headerH1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--MBlack);
+}
+.menu__link {
+    font-weight: normal;
+    align-self: center;
+    font-size: calc(1rem + 0.2vmin);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--MBlack);
+    transition: ease 0.4s all;
+    text-decoration: none !important;
+}
+
+.headerStart {
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.headerStart a {
+    text-decoration: none !important;
+}
+
+.headerEnd {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    margin-right: auto;
+}
+
+.headerStart a {
+    height: var(--logo);
+}
+
+#CTA {
+    border-radius: 10px;
+    border: solid 2px var(--gold);
+}
+
+.CTAPhone {
+    color: inherit;
+    display: none;
+    font-size: inherit;
+    transition: ease 0.4s all;
+}
+
+.CTA {
+    color: inherit;
+    font-size: inherit;
+    transition: ease 0.4s all;
+}
+
+#CTA:hover {
+    color: var(--orange);
+}
+
+.menu__link:hover {
+    color: var(--orange);
+}
+
+#current {
+    color: var(--gold);
+}
+
+
+@media only screen and (max-width: 600px){
+    .menu__link {
+        font-size: calc(2px + 0.3rem + 1.5vmin);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .headerH1 {
+        font-size: 16px;
+    }
+    header {
+        padding: 0;
+    }
+}
+
+
+
+/* Footer Styles */
+
+footer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    background: var(--secondary);
+}
+
+.footerHeader {
+    padding: 2em;
+    padding-bottom: 1em;
+    padding-top: 1vw;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footerH1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.footerContainer {
+    padding: 2em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.footerText {
+    font-size: 20px;
+    color: var(--white);
+}
+
+.footerTitle {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.footerContainer a {
+    color: var(--white);
+    transition: ease 0.4s all;
+    text-decoration: none;
+}
+  
+.footerContainer a:hover {
+    color: var(--gold);
+}
+.footerElement p {
+margin-block: 10px;
+}
+@media only screen and (max-width: 600px){
+    .footerContainer {
+        grid-template-columns: 1fr;
+    }
+    .footerH1 {
+        font-size: 2em;
+    }
+    .footerText p {
+        line-height: 0.8;
+      }
+      .footerHeader {
+        padding-left: 5px;
+    }
+}
+.socialsContainer {
+    display: flex;
+}
+.socialsContainer a {
+    margin-left: 5px;
+}
+ion-icon {
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    transition: ease 0.4s all;
+}
+ion-icon:hover {
+    color: #ffaa00;
+}
+
+/* Dashboard */
+
+.app-main__outer {
+    padding-left: 0 !important;
+}
+.dashboardMain {
+    padding: 2em;
+    padding-top: 10em;
+}
+.tableHead {
+    font-size: 32px;
+}

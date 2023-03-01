@@ -162,10 +162,7 @@ header{
         flex-direction: column;
         text-align: center;
     }
-    .main-landing {
-        margin-top: 50px;
-}
-.main-landing p{
-    width:320px;
-}
+    .main-landing p{
+        width:320px;
+    }
 }

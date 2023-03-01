@@ -48,9 +48,10 @@ header{
 }
 .main-landing {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 40px;
 }
 .main-landing h2 {

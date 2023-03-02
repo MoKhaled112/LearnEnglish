@@ -203,8 +203,8 @@ ion-icon:hover {
 /* Dashboard */
 
 .dashboardMain {
-    padding: 2em;
-    padding-top: 10em;
+    padding: 3em;
+    padding-top: 6em;
 }
 
 .dashboardHeader {
@@ -235,4 +235,8 @@ th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+#currentPage {
+    color: var(--orange);
 }
